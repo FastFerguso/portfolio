@@ -11,7 +11,6 @@ load_dotenv(dotenv_path)
 
 MONGODB_URI = os.environ.get("MONGODB_URI")
 DB_NAME =  os.environ.get("DB_NAME")
-
 client = MongoClient(MONGODB_URI, ssl_cert_reqs=ssl.CERT_NONE)
 db = client[DB_NAME]
 
